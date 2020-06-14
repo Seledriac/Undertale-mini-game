@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewModels.Game3ViewModel">
+   <children>
+   	  <Rectangle fx:id="rectangleFond" arcHeight="5.0" arcWidth="5.0" fill="BLACK" focusTraversable="true" height="720.0" stroke="WHITE" strokeType="INSIDE" translateZ="20.0" width="1280.0" x="0.0" y="0.0" />
+      <ImageView fx:id="coeur_1" fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+         <image>
+            <Image url="@external-content.duckduckgo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coeur_2" fitHeight="75.0" fitWidth="75.0" layoutX="75.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+         <image>
+            <Image url="@external-content.duckduckgo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="coeur_3" fitHeight="75.0" fitWidth="75.0" layoutX="150.0" pickOnBounds="true" preserveRatio="true" x="10.0" y="10.0">
+         <image>
+            <Image url="@external-content.duckduckgo.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rectangleCentral1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" focusTraversable="true" height="520.0" stroke="WHITE" strokeType="INSIDE" translateZ="10.0" width="430.0" x="425.0" y="120.0" />
+      <Rectangle fx:id="rectangleCentral" arcHeight="5.0" arcWidth="5.0" focusTraversable="true" height="500.0" stroke="BLACK" strokeType="INSIDE" width="20.0" x="630.0" y="130.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.3333333333333333">
+               <stops>
+                  <Stop color="#eb0505" />
+                  <Stop color="#eedc14" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fx:id="gameText" fill="WHITE" layoutX="515.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE : 0 " wrappingWidth="294.13671875">
+         <font>
+            <Font name="Source Serif Pro Semibold" size="57.0" />
+         </font>
+      </Text>
+      <Button layoutX="1070.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#onMouseClicked" prefHeight="38.0" prefWidth="174.0" text="Return to Main Menu">
+         <font>
+            <Font name="Symbol" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewModels.GameOverViewModel">
+   <children>
+      <Rectangle fx:id="rectangleFond" arcHeight="5.0" arcWidth="5.0" fill="BLACK" focusTraversable="true" height="720.0" stroke="WHITE" strokeType="INSIDE" translateZ="20.0" width="1280.0" x="0.0" y="0.0" />
+      <Text focusTraversable="true" layoutX="393.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER" wrappingWidth="493.13671875">
+         <font>
+            <Font name="Britannic Bold" size="96.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.4777777777777778" centerY="0.5380952380952381" radius="1.0">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text fx:id="gameOverText" fill="WHITE" focusTraversable="true" layoutX="318.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="645.0">
+         <font>
+            <Font name="Britannic Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="#616161" focusTraversable="true" layoutX="475.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[ Press space to return to the main menu ]">
+         <font>
+            <Font name="Britannic Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="highScoreInfoText" fill="#616161" focusTraversable="true" layoutX="471.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="340.0">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
