@@ -2,7 +2,7 @@
 
 This Game was inspired by the interaction whichs occurs after you cast an attack in the videogame Undertale.
 
-[![Visual calculator demo](https://j.gifs.com/zvDY6r.gif)](https://gifs.com/gif/visual-calculator-zvDY6r)
+[![Game Demo](https://j.gifs.com/Jyn5m2.gif)](https://gifs.com/gif/game-demo-Jyn5m2)
 
 ## Gameplay
 
